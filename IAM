@@ -76,3 +76,24 @@ Wymagania biznesowe systemu PAM
 -Ułatwienie przeprowadzania audytu. Zarządzanie kontami uprzywilejowanymi tworzy mniej skomplikowane środowisko, w którym łatwiej przeprowadzić konstruktywny dla firmy audyt. 
 -Prostota interfejsu pozwala na zmniejszenie czasu potrzebnego na szkolenia które jest wymagane by pracownik efektywnie pracował w systemie.
 - zautomatyzowanie jak największej ilości narzędzi
+
+Wymagania bezpieczeństwa systemu PAM
+- Automatyczne wyrejestrowywanie byłych użytkowników, w ten sposób blokując im dostęp do narzędzi.
+- Możliwość blokowania nieautoryzowanego logowania do konta administratora z poza specjalnych Stacji roboczych z dostępem uprzywilejowanym
+-ograniczenie czasu na  zalogowanie się. Po upłynięciu czasu sesji logowania użytkownik będzie musiał ponownie przejść cały proces autoryzacyjny
+- Wdrożenie odizolowanych, odseparowanych repozytorium w celu bezpiecznego przechowywania haseł do kont uprzywilejowanych i zmniejszenia ryzyka ich kradzieży 
+-spełnianie zgodności branżowych związanych z wytycznymi i przepisami np. SOC 2, ISO 27001 czy RODO.
+- dzięki zastosowaniu sztucznej inteligencji system pam będzie wskazywać informacje gdy działanie jednego z użytkowników odbiega od normy.
+-Zgodność z normą OWASP ( Aplication security verification standard)
+-Wdrożenie PAM znacznie ogranicza dostęp osób trzecich do kont uprzywilejowanych. W ten sposób zmniejszamy zagrożenie atakiem ransomware takimi jak Golden Ticket itp., które mogą w ostatecznym rozrachunku zakończyć się całkowitym paraliżem przedsiębiorstwa.
+- Brak krytycznych i wysokich podatności podczas testów penetracyjnych
+- kopie bezpieczeństwa nie rzadziej niż 2 razy w tygodniu
+-Szyfrowana komunikacja
+-mechanizm oparty na uczeniu maszynowym, który pozwoli nam zablokować użytkownika jeśli wykona działania, które mogą narazić naszą firmę na straty
+-Logowanie wszelkich zmian w uprawnieniach
+- kontrolowanie ilości kont z wysokimi uprawnieniami tak aby były one aktywne w ilości minimalnie potrzebnej zgodnie z zasadą Zero Trust
+- Zastosowanie uczenia maszynowego aby w zależności od pełnionej posady użytkownika automatycznie przypisać mu niezbędne uprawnienia do wykonywania pracy, a wraz ze zmianą posady automatycznie te uprawnienia zmieniać to tych minimalnie wymaganych na danej funkcji zgodnie z zasadą Zero Trust
+-System powinien spełniać MINIMALNE WYMAGANIA BEZPIECZEŃSTWA INFORMACJI I SYSTEMÓW INFORMATYCZNYCH PODMIOTÓW PUBLICZNYCH NSC 200 WER. 2.0
+-Korzystanie z najnowszej wersji oprogramowania
+-Stworzenie architektury zapewniającej wydajność i niedopuszczającej wystąpienie błędów logicznych
+- regularne przeprowadzanie kursów szkoleniowych odnośnie bezpiecznego działania w systemie
