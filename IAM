@@ -267,3 +267,48 @@ Niezbędne mechanizmy SZBD:
 - system zapewniający że dane nie powtarzają się przez co oszczędzana jest pamięć 
 - możliwość izolowania i wyodrębnienia poufnych baz danych od tych powszechnych 
 - możliwość dzielenia baz danych na grupy i podgrupy o odpowiednim poziomie uprawnień
+
+Wymagania biznesowe systemu zarządzania bazą danych
+-Monitorowanie aktywności i działań użytkowników końcowych pozwala na pociągnięcie do odpowiedzialności osobę odpowiedzialną za naruszenie i wszczęcie procesu o odszkodowanie
+-system zapewniający że dane nie powtarzają się przez co oszczędzana jest pamięć co zmniejsza koszty związane z zakupem przestrzeni pamięci
+-System zapewnia szybkie wyszukiwanie określonych danych nie dłuższe niż 2 sec co zwiększa wydajność organizacji
+-Zapewnienie że tabele są od siebie niezależne i umożliwieni ich modyfikacji praktycznie w dowolny sposób. Dzięki temu relacyjne bazy danych oferują dużo wyższy poziom niezależności danych niż bazy hierarchiczne czy sieciowe.
+-Prostota interfejsu - relacyjne bazy danych oparte są na tabelach (wierszach i kolumnach), dlatego są łatwe do zrozumienia. Nie ma konieczności tworzenia złożonych diagramów, które są charakterystyczne dla hierarchicznych i sieciowych baz danych. Pozwala to na zmniejszenie czasu potrzebnego na szkolenia które jest wymagane by pracownik efektywnie pracował w systemie.
+- Prostota usuwania istniejących błędów w systemie pozwalająca na jak najszybsze przywrócenie poprawności działania w razie usterki
+- Bez tego systemu niemożliwym jest sprawne zarządzanie tak rozległą bazą danych jaką posiada WP 
+-Jest to unikatowe narzędzie, które wspiera rozwój firmy, przekładając się na wsparcie przepływu informacji i ogólnego rozwoju poszczególnych departamentów.
+
+- 
+
+
+
+
+
+
+Wymagania bezpieczeństwa systemu zarządzania bazą danych
+
+- ukazanie użytkownikom danych w zależności od posiadanych przez nich uprawnień
+-Zastosowanie funkcji szyfrowania danych
+-możliwość blokowania dostępu użytkowników których lokalizacja jest oddalona o 100 km od wcześniej dekarowanej. W celu uwierzytelnienia wysyłane zostanie połączenie telefoniczne potwierdzające czy logujący się zmienił lokacje z której pragnie się zalogować
+-spełnianie zgodności branżowych związanych z wytycznymi i przepisami np. SOC 2, ISO 27001 czy RODO.
+- Brak krytycznych i wysokich podatności podczas testów penetracyjnych
+-Zgodność z normą OWASP ( Aplication security verification standard)
+-kopie bezpieczeństwa nie rzadziej niż 2 razy w tygodniu
+- regularna kontrola bezpieczeństwa kopii zapasowych nie rzadziej niż raz w miesiącu
+-Szyfrowana komunikacja z serwerem
+-mechanizm oparty na uczeniu maszynowym, który pozwoli nam zablokować użytkownika jeśli wykona działania, które mogą narazić naszą firmę na straty
+-Logowanie wszelkich zmian w uprawnieniach
+-System powinien spełniać MINIMALNE WYMAGANIA BEZPIECZEŃSTWA INFORMACJI I SYSTEMÓW INFORMATYCZNYCH PODMIOTÓW PUBLICZNYCH NSC 200 WER. 2.0
+-Zabezpieczenie fizycznego serwera bazy danych i/lub wirtualnego serwera bazy danych oraz sprzętu bazowego
+-Zabezpieczenie systemu przed przepełnieniem bufora pamięci w postaci zapasowych nośników, urządzeń do przechowywania danych
+-Zapewnienie dostępu do bazy danych jak najmniejszej ilości użytkowników zgodnie z modelem zero trust
+-Korzystanie z najnowszej wersji oprogramowania
+-regularnie przeprowadzanie kontroli standardów bezpieczeństwa baz danych.
+-Stworzenie architektury zapewniającej wydajność i niedopuszczającej wystąpienie błędów logicznych
+- zapewnienie integralności danych poprzez wykorzystanie systemów audytowych
+- regularne przeprowadzanie kursów szkoleniowych odnośnie bezpiecznego działania w systemie
+- zastosowanie maskowania danych w celu ich zabezpieczenia
+- zastosowanie zamazywania danych w celu ich zabezpieczenia 
+- izolowanie i wyodrębnienie poufnych baz danych 
+- minimalizacja plików, przechowywanie jedynie istotnych danych 
+
