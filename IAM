@@ -1,0 +1,55 @@
+Privileged Access Management (PAM)
+
+to rozwiązanie zarządzające całą uprzywilejowaną architekturą, zarządzanie użytkownikami, kontami oraz zdalnymi sesjami. Jedną z najważniejszych zasad działania PAM jest tak zwana zasada najmniejszego dostępu (z ang. Zero Trust Access). Polega na tym, że użytkownik otrzymuje tylko te uprawnienia, które są konieczne do wymaganej pracy. W ten sposób system ogranicza uprawnienia wszystkich użytkowników, aplikacji czy systemów, a także urządzeń do poziomu minimalnego, które umożliwiają wykonywanie codziennych obowiązków.
+
+Oznacza to również, że zdecydowana większość użytkowników w organizacji nie ma dostępu do krytycznych danych, które potencjalnie mogą być wykorzystywane podczas cyberataku.
+
+Zalety Pam:
+-Monitoring w czasie rzeczywistym.
+-To narzędzie umożliwia bieżącą kontrolę, kto uzyskuje dostęp do każdej sieci serwera, aplikacji czy urządzenia.
+-Umożliwia śledzenie prób uzyskiwania dostępu do nieautoryzowanych obszarów. 
+-Wiele narzędzi PAM bazujących na sztucznej inteligencji odpowiednio wcześniej może informować , gdy działanie jednego z użytkowników odbiega od normy.
+-Rozliczalność kontraktorów i wewnętrznych administratorów.
+Umożliwia śledzenie czasu sesji użytkowników, co pomaga w późniejszym rozliczeniu między kontrahentami czy dostawcami wykonującymi usługi.
+-Zgodność z przepisami - Rozwiązanie konieczne jest do spełnienia pewnych zgodności branżowych związane z wytycznymi i przepisami np. SOC 2, ISO 27001 czy RODO.
+-Oszczędność czasu - Zdecydowana większość narzędzi PAM działa w sposób automatyczny. W ten sposób firma oszczędza czas pracy pracowników, a przez to ogranicza koszty.
+
+
+
+
+Wymagania funkcjonalne systemu PAM
+- zabezpieczenie zgodnie ze standardami oraz zarządzanie kontami takimi jak:
+•	lokalne konto administracyjne, które daje dostęp do zasobów,
+•	domenowe konto użytkownika z dostępem do stacji roboczych i serwerów w ramach domeny,
+•	konto alarmowe (break glass) używane w awaryjnych sytuacjach,
+•	konto techniczne lub serwisowe używane do obsługi systemu operacyjnego,
+•	konto Active Directory, które umożliwia zmianę haseł do kont,
+•	konto aplikacji, które daje dostęp do baz danych lub zapewnia dostęp do innych aplikacji.
+
+-Zapewnienie wydajności pozwalającej obsłużyć rozrastającą się bazę użytkowników uprzywilejowanych armii WP
+-Możliwość zmiany czcionki , języka interfejsu
+wdrożenie funkcji raportującej 
+możliwość przydzielania użytkowników do grup
+- Możliwość blokowania nieautoryzowanego logowania do konta administratora z poza specjalnych Stacji roboczych z dostępem uprzywilejowanym
+- Możliwość szybkiego poruszania się za pomocą skrótów klawiszowych
+- czytelny i prosty interfejs
+- możliwość przypisania użytkownika do odpowiedniej grupy
+-Umożliwia śledzenie czasu sesji użytkowników, co pomaga w późniejszym rozliczeniu między kontrahentami czy dostawcami wykonującymi usługi.
+- dzięki zastosowaniu sztucznej inteligencji system pam będzie wskazywać informacje gdy działanie jednego z użytkowników odbiega od normy.
+- Umożliwienie śledzenie prób uzyskiwania dostępu do nieautoryzowanych obszarów. 
+- umożliwienie prowadzenia monitoringu w czasie rzeczywistym - bieżąca kontrola, kto uzyskuje dostęp do każdej sieci serwera, aplikacji czy urządzenia lub procesu.
+- monitorowanie wprowadzania zmian
+- Wdrożenie odizolowanych, odseparowanych repozytorium w celu bezpiecznego przechowywania haseł do kont uprzywilejowanych i zmniejszenia ryzyka ich kradzieży 
+- wdrożenie menadżera dostępu w którym będą przechowywane uprawnienia i krytyczne informacje o użytkownikach
+- Nagrywanie i rejestrowanie sesji użytkowników w celu umożliwienia prześledzenia czynności przez nich wykonanych. Dzięki temu można wykryć jakie działania doprowadziły do awarii
+- ograniczenie czasu na  zalogowanie się. Po upłynięciu czasu sesji logowania użytkownik będzie musiał ponownie przejść cały proces autoryzacyjny
+- Zautomatyzowane udostępnianie i wyrejestrowywanie
+- Automatyczne wyrejestrowywanie byłych użytkowników, w ten sposób blokując im dostęp do narzędzi.
+- Logowanie wszelkich zmian w uprawnieniach
+- Zastosowanie uczenia maszynowego aby w zależności od pełnionej posady użytkownika automatycznie przypisać mu niezbędne uprawnienia do wykonywania pracy, a wraz ze zmianą posady automatycznie te uprawnienia zmieniać to tych minimalnie wymaganych na danej funkcji zgodnie z zasadą Zero Trust
+-zabezpieczenie dostępu do krytycznych serwerów
+-powiązanie pojedynczej sesji z określonym użytkownikiem uprzywilejowanym
+- możliwość integracji z systemami Help Desk, 
+-możliwość reagowania na niebezpieczne incydenty w czasie rzeczywistym.
+- możliwość tworzenia kopii zapasowych
+- możliwość odzyskiwania kopii zapasowych
