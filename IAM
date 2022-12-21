@@ -147,3 +147,69 @@ Wymagania funkcjonalne systemu CIAM
 - Logowanie wszelkich zmian w uprawnieniach
 - możliwość tworzenia kopii zapasowych
 - możliwość odzyskiwania kopii zapasowych
+
+Wymagania biznesowe systemu CIAM
+-Ułatwienie i przyśpieszenie zarządzania dostępem i tożsamością użytkowników
+-Zmniejszenie ryzyka odnośnie naruszenia, utraty danych i nadszarpnięcia reputacji firmy
+-Zapewnienie wysokiego poziomu bezpieczeństwa, nie generując przy tym wysokich kosztów
+-Zmniejszone ryzyko pomyłek pracowników
+-Regularne weryfikowanie dostępu do infrastruktury IT
+-Zmniejszenie ryzyka wycieku tożsamości, poufnych danych o klientach lub pracownikach oraz korespondencji wewnętrznej.
+-Zmniejszenie kosztu obsługi migracji pracowników
+-Wsparcie organizacji poprzez pomoc w spełnianiu wymagań regulacyjnych oraz ograniczaniu kosztów, minimalizowaniu czasu potrzebnego na rozwiązywanie problemów związanych z kontami użytkowników
+-Zmniejszenie ryzyka związanego ze złośliwym oprogramowaniem
+-Wyeliminowanie zarządzania manualnego tożsamością wpływa na usprawnienie tempa pracy administratorów
+- Prostota interfejsu pozwala na zmniejszenie czasu potrzebnego na szkolenia które jest wymagane by pracownik efektywnie pracował w systemie.
+-Przeglądy dostępu mogą być przeprowadzone bez konieczności kontaktu z firmą zewnętrzną
+-Możemy wprowadzić oparty na uczeniu maszynowemu mechanizm, który pozwoli nam zablokować użytkownika jeśli wykona działania, które mogą narazić naszą firmę na straty
+
+Wymagania bezpieczeństwa systemu CIAM
+-Zastosowanie funkcji szyfrowania danych
+-możliwość blokowania dostępu użytkowników których lokalizacja jest oddalona o 100 km od wcześniej dekarowanej. W celu uwierzytelnienia wysyłane zostanie połączenie telefoniczne potwierdzające czy logujący się zmienił lokacje z której pragnie się zalogować
+-spełnianie zgodności branżowych związanych z wytycznymi i przepisami np. SOC 2, ISO 27001 czy RODO.
+- Brak krytycznych i wysokich podatności podczas testów penetracyjnych
+-Zgodność z normą OWASP ( Aplication security verification standard)
+-kopie bezpieczeństwa nie rzadziej niż 2 razy w tygodniu
+-regularna kontrola bezpieczeństwa kopii zapasowych nie rzadziej niż raz w miesiącu
+-Szyfrowana komunikacja
+-mechanizm oparty na uczeniu maszynowym, który pozwoli nam zablokować użytkownika jeśli wykona działania, które mogą narazić naszą firmę na straty
+-Logowanie wszelkich zmian w uprawnieniach
+-System powinien spełniać MINIMALNE WYMAGANIA BEZPIECZEŃSTWA INFORMACJI I SYSTEMÓW INFORMATYCZNYCH PODMIOTÓW PUBLICZNYCH NSC 200 WER. 2.0
+-Korzystanie z najnowszej wersji oprogramowania
+-Stworzenie architektury zapewniającej wydajność i niedopuszczającej wystąpienie błędów logicznych
+- regularne przeprowadzanie kursów szkoleniowych odnośnie bezpiecznego działania w systemie
+
+
+
+System zarządzania bazą danych
+
+w skrócie SZBD, znany także jako DBMS (od angielskiego database management system), to oprogramowanie lub system informatyczny przeznaczony do zarządzania bazą danych. Systemy zarządzania bazą danych umożliwiają manipulowanie danymi zgromadzonymi w systemach komputerowych oraz ich aktualizowanie.
+
+Są przystosowane do obsługi bardzo dużych zbiorów danych i zapewniają możliwość zarządzania złożonymi strukturami. Wykorzystywane są głównie do obsługi relacyjnych baz danych, które od lat 80. są ich dominującym rodzajem baz danych.
+
+Najważniejsze cechy systemów zarządzania bazami danych to:
+
+- współbieżny dostęp dla wielu użytkowników,
+- optymalizacja dostępu poprzez jak najszybsze dostarczenie danych użytkownikowi,
+- ochrona danych przed niepowołanych dostępem,
+- możliwość odtworzenia bazy danych po awarii,
+- niezależność danych od aplikacji,
+- fizyczna struktura danych oparta na jednym logicznym modelu danych,
+- uwzględnienie standardu języka zapytań,
+- rozdział modelu fizycznego od modelu logicznego,
+- automatyczna obsługa spójności bazy danych,
+- ograniczenie redundancji danych.
+ 
+Architektura klient-serwer
+
+Większość najpopularniejszych systemów zarządzania bazą danych działa w trybie klient-serwer, podobnie jak poczta elektroniczna. Baza danych udostępniania jest użytkownikom za pomocą SZBD wcielającego się w rolę serwera. Dane mogą być udostępniane bezpośrednio bądź przez inny serwer. Istnieją również systemy zarządzania bazą danych nierozróżniające podziału na klienta i serwer. Używane są do obsługi baz danych, które nie muszą być współdzielone przez wielu użytkowników jednocześnie.
+ 
+Przykłady systemów zarządzania bazą danych
+
+Istnieje wiele systemów zarządzania bazą danych. Do najpopularniejszych zaliczyć można:
+
+1. MySQL – otwarte oprogramowanie opracowane przez szwedzką firmę MySQL AB, a obecnie rozwijane przez firmę Oracle;
+2. Oracle Database – inny system zarządzania bazą danych amerykańskiej firmy. Znany także jako Oracle DBMS lub po prostu Oracle;
+3. PostgreSQL – wolne i otwarte oprogramowanie, który ma swoje korzenie na Uniwersytecie Kalifornijskim w Berkeley;
+4. Microsoft SQL Server – system zarządzania bazą danych rozwijany przez Microsoft od 1989 roku. Jego najnowsza wersja to SQL Server 2019;
+5. Microsoft Access – najpopularniejszy system zarządzania bazami danych nieuwzględniających podziału na klienta i serwer.
