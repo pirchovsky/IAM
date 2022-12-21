@@ -97,3 +97,53 @@ Wymagania bezpieczeństwa systemu PAM
 -Korzystanie z najnowszej wersji oprogramowania
 -Stworzenie architektury zapewniającej wydajność i niedopuszczającej wystąpienie błędów logicznych
 - regularne przeprowadzanie kursów szkoleniowych odnośnie bezpiecznego działania w systemie
+
+Customer Identity and Access Management (CIAM)
+
+to rodzaj zarządzania tożsamościami i dostępem (IAM), który integruje uwierzytelnianie i autoryzację w aplikacjach skierowanych do klienta. 
+
+CIAM robi trzy główne rzeczy:
+
+1 Poprawia rejestrację i logowanie klientów, jednocześnie zmniejszając ryzyko przejęcia konta (powszechny problem w przestrzeni konsumenckiej z powodu ponownego użycia hasła).
+2. Oferuje spersonalizowane i markowe doświadczenia dla konsumentów, firm i klientów korporacyjnych.
+3. Zapewnia skalowalne rozwiązanie, które może obsługiwać setki milionów klientów.
+
+CIAM może składać się z szerokiej gamy narzędzi i aplikacji, często łącząc oprogramowanie wielu dostawców w celu osiągnięcia pożądanej funkcjonalności
+
+Zarządzanie tożsamością i dostępem klientów (CIAM) umożliwia organizacjom bezpieczne przechwytywanie tożsamości i danych profilowych klientów oraz zarządzanie nimi, a także kontrolowanie dostępu klientów do aplikacji i usług.
+
+ 
+
+Rozwiązania CIAM (znane również jako Customer Identity)  zwykle zapewniają kombinację funkcji, w tym rejestrację klienta, samoobsługowe zarządzanie kontem, zarządzanie zgodami i preferencjami, jednokrotne logowanie (SSO) , uwierzytelnianie wieloskładnikowe (MFA) , zarządzanie dostępem, usługi katalogowe i zarządzanie dostępem do danych. Najlepsze rozwiązania CIAM zapewniają bezpieczną, bezproblemową obsługę klienta w ekstremalnej skali i wydajności, bez względu na to, z jakich kanałów (sieć, urządzenia mobilne itp.) klienci korzystają w celu interakcji z marką.
+
+ 
+Rozwiązania te mogą być dostarczane za pośrednictwem oprogramowania, które można wdrożyć lokalnie, w chmurach prywatnych lub za pośrednictwem platform tożsamości jako usługi (IDaaS) . Niektóre platformy udostępniają swoje możliwości — w tym możliwości administracyjne — za pośrednictwem interfejsów API i są przeznaczone dla zespołów programistycznych, które chcą osadzić usługi CIAM w swoich aplikacjach. Niezależnie od metody dostarczania, celem jest zapewnienie bezproblemowego i bezpiecznego dostępu do aplikacji cyfrowych.
+
+
+Wymagania funkcjonalne systemu CIAM
+- Możliwość zmiany czcionki , języka interfejsu
+-  wdrożenie funkcji raportującej 
+- możliwość przydzielania użytkowników do grup
+- Możliwość szybkiego poruszania się za pomocą skrótów klawiszowych
+- czytelny i prosty interfejs
+- Zapewnienie wydajności pozwalającej obsłużyć rozrastającą się bazę użytkowników armii WP
+- Przydzielanie dostępu do danych jedynie uprawnionym użytkownikom
+- Blokowanie dostępu do danych użytkownikom nieuprawnionym
+- możliwość tworzenia tożsamości cyfrowej użytkowników
+- możliwość edytowania tożsamością cyfrową użytkowników
+- możliwość usuwania tożsamości cyfrowej użytkowników
+- Umożliwienie kontrolowania przepływu informacji prywatnej
+- możliwość blokowania dostępu użytkowników których lokalizacja jest oddalona o 100 km od wcześniej deklarowanej. W celu uwierzytelnienia wysyłane zostanie połączenie telefoniczne potwierdzające czy logujący się zmienił lokacje z której pragnie się zalogować 
+- system musi posiadać zabezpieczony zgodnie z normami interfejs API
+- system musi obsługiwać zabezpieczone zestawy SDK dla aplikacji mobilnych
+- możliwość obsługi umożliwiającej monitorowanie zachowań użytkowników w czasie rzeczywistym
+- zarządzanie autoryzacją użytkowników
+- umożliwienie samodzielnej rejestracji użytkownikom 
+- umożliwienie użytkownikowi zarządzania personalizacją konta
+- umożliwienie użytkownikowi na złożenie rezygnacji z konta
+- umożliwienie użytkownikowi na reset hasła
+- umożliwienie zarządzania rejestrami klientów
+-  mechanizm oparty na uczeniu maszynowym, który pozwoli nam zablokować użytkownika jeśli wykona działania, które mogą narazić naszą firmę na straty
+- Logowanie wszelkich zmian w uprawnieniach
+- możliwość tworzenia kopii zapasowych
+- możliwość odzyskiwania kopii zapasowych
